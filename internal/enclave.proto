@@ -1,0 +1,49 @@
+// SPDX-FileCopyrightText: © 2024 Nadim Kobeissi <nadim@symbolic.software>
+// SPDX-License-Identifier: GPL-2.0-only
+
+syntax="proto3";
+option go_package = "./proto";
+
+package proto;
+
+message Page {
+	string Body = 1;
+	int64 ModDate = 2;
+}
+
+message Notebook {
+	repeated Page Pages = 1;
+}
+
+message EncryptedNotebook {
+	bytes NotebookId = 1;
+	bytes DecoyFor = 2;
+	bool DecoyFuse = 3;
+	bytes Data = 4;
+	bytes Nonce = 5;
+}
+
+message NotebookId {
+	bytes Id = 1;
+}
+
+message Ping {
+	bytes Msg = 1;
+}
+
+message PutNotebookResponse {
+	int32 responseCode = 1;
+}
+
+message GetNotebookResponse {
+	int32 responseCode = 1;
+	bytes NotebookId = 2;
+	bytes Data = 3;
+	bytes Nonce = 4;
+}
+
+service EnclaveService {
+	rpc PingPong(Ping) returns (Ping) {}
+	rpc PutNotebook(EncryptedNotebook) returns (PutNotebookResponse) {}
+	rpc GetNotebook(NotebookId) returns (GetNotebookResponse) {}
+}
