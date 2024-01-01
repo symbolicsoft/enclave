@@ -4,7 +4,7 @@
 
 Enclaves can be accessed from anywhere with a simple, memorizable ten-word passphrase (without an accompanying username) and benefit from blazing-fast synchronization. Enclave notebooks are authenticated yet anonymous, provide plausible deniability and self-destruction features, and are highly portable thanks to their passphrase access system, which in practice works in a way similar to cryptocurrency wallets.
 
-Enclave notebooks benefit from state-of-the art post-quantum secure encryption. The Enclave command-line notebook editor is simple yet full-featured, and works on all major operating systems.
+Enclave notebooks benefit from strong encryption. The Enclave command-line notebook editor is simple yet full-featured, and works on all major operating systems.
 
 Each Enclave notebook can be set up to work with an optional _decoy_ notebook: when a decoy notebook is accessed, its paired notebook is wiped from the Enclave server. It is not possible for an attacker who does not have access to the server to determine if any Enclave notebook is a decoy notebook or if it is paired to a decoy notebook, or if an Enclave passphrase points to a wiped notebook.
 
