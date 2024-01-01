@@ -8,6 +8,18 @@ Enclave notebooks benefit from state-of-the art post-quantum secure encryption. 
 
 Each Enclave notebook can be set up to work with an optional _decoy_ notebook: when a decoy notebook is accessed, its paired notebook is wiped from the Enclave server. It is not possible for an attacker who does not have access to the server to determine if any Enclave notebook is a decoy notebook or if it is paired to a decoy notebook, or if an Enclave passphrase points to a wiped notebook.
 
+## Project Status
+
+Feel free to pull this down, compile it and try it out:
+
+```bash
+git clone https://github.com/symbolicsoft/enclave
+cd enclave
+go run github.com/symbolicsoft/enclave/v2/cmd/enclave
+```
+
+Enclave is currently in a "minimum viable product" stage. There's a barebones featureset which works okay, probably. Don't expect anything more than that as of right now -- there aren't even any versioned releases yet.
+
 ## Technical Specification
 
 Enclave Protocol is meant to provide highly portable secure notebook synchronization from a light client.
