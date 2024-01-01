@@ -1,8 +1,10 @@
 # Enclave
 
+![Enclave Screenshot](assets/screenshot.png)
+
 **Enclave** is your command-line secure encrypted deniable cloud-synchronized notebook.
 
-Enclaves can be accessed from anywhere with a simple, memorizable ten-word passphrase (without an accompanying username) and benefit from blazing-fast synchronization. Enclave notebooks are authenticated yet anonymous, provide plausible deniability and self-destruction features, and are highly portable thanks to their passphrase access system, which in practice works in a way similar to cryptocurrency wallets.
+Enclaves can be accessed from anywhere with a simple, memorizable word passphrase (without an accompanying username) and benefit from blazing-fast synchronization. Enclave notebooks are authenticated yet anonymous, provide plausible deniability and self-destruction features, and are highly portable thanks to their passphrase access system, which in practice works in a way similar to cryptocurrency wallets.
 
 Enclave notebooks benefit from strong encryption. The Enclave command-line notebook editor is simple yet full-featured, and works on all major operating systems.
 
