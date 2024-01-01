@@ -144,7 +144,7 @@ func (mm MainModel) Update(msg tea.Msg) (tea.Model, tea.Cmd) {
 		}
 	case tea.WindowSizeMsg:
 		lR, lC := (30 * (msg.Width) / 100), (msg.Height - 3)
-		eR, eC := (73 * (msg.Width) / 100), (msg.Height - 3)
+		eR, eC := (70 * (msg.Width) / 100), (msg.Height - 3)
 		mm.list.list.SetSize(lR, lC)
 		mm.list.list.SetWidth(lR)
 		mm.list.list.SetHeight(lC)
