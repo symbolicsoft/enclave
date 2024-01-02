@@ -141,6 +141,7 @@ func (mm MainModel) Update(msg tea.Msg) (tea.Model, tea.Cmd) {
 		if updateNotebook && previousValue != mm.editor.textarea.Value() {
 			mm.notebook.Pages[mm.pageIndex].Body = mm.editor.textarea.Value()
 			mm.notebook.Pages[mm.pageIndex].ModDate = time.Now().Unix()
+			mm.messages.SetMessage(MessageInfo, "Notebook updated since last save.")
 		}
 	case tea.WindowSizeMsg:
 		lR, lC := (30 * (msg.Width) / 100), (msg.Height - 3)
